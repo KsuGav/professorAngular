@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Volodymyr Betz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="src/css/styles.css"/>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body >
+<!--//HEADER-->
+<div class="header">
+    <div class="row">
+        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            <a href="http://uk-ua.facebook.com/" target="_blank"><img class="socNet" src="src/img/FB.png"/></a>
+            <a href="https://plus.google.com/" target="_blank"><img class="socNet" src="src/img/Gpl.png"/></a>
+            <a href="https://twitter.com/" target="_blank"><img class="socNet" src="src/img/Twit.png"/></a>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+            <h1>Volodymyr Betz</h1>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            <img class="socNet" id="childImg" src="src/img/ForChildren.png"/>
+            <p class="headChild">For children</p>
+            <select class="headChild">
+                <option>Eng</option>
+                <option>Ukr</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!--//MAIN CONTAINER-->
+<div class="container" ng-controller="NavigationCtrl as navig">
+    <!--//NAVBAR-->
+    <div class="row" >
+    <div class="navbar" role="navigation">
+    <div class="containerNav">
+<!--
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+               <li ng-repeat='arr in navig.arr'><a href="{{arr.link}}" data-toggle="tab" data-target="#{{arr.title}}">{{arr.title}}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+    
+ <div class="row" id='main'> 
+    <ng-view></ng-view>
+</div>  
+    
+</div>
+    
+<!--//FOOTER-->
+<div class="footer">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 column">
+            <div class="row">
+                <h4>Volodymyr Betz</h4>
+                <hr>
+            </div>
+            <div class="row">
+                <p id="textFirstFoot" class="text-justify">This website was created with a grant support of the Federation of European Neuroscience Societies (FENS).</p>
+            </div>
+            <div class="row footMarg">
+                <a href="http://uk-ua.facebook.com/" target="_blank"><img class="socNet" src="src/img/fbFoot.png"/></a>
+                <a href="https://plus.google.com/" target="_blank"><img class="socNet" src="src/img/googleFoot.png"/></a>
+                <a href="https://twitter.com/" target="_blank"><img class="socNet" src="src/img/twitFoot.png"/></a>
+            </div>
+            <div class="row footMarg">&copy; Yurii Salyha, 2016</div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 column">
+            <div class="row">
+                <h4>Menu</h4>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-4 footMenu">
+                    <ul class="list-unstyled">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#activity">Scientific activity</a></li>
+                    <li><a href="#cells">Betz cells</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 footMenu">
+                    <ul class="list-unstyled">
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#bibliography">Bibliography</a></li>
+                    <li><a href="#miscellaneous">Miscellaneous</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-4">
+                    <img src="src/img/forChild2.png"/>
+                </div>
+            </div>
+            <div class="row">
+                <img class='logoImg' src="src/img/logo.png"/>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-4 thirdColumn">
+            <div class="row">
+                <img src="src/img/footerImg3.png" class="footImg firstLog"/>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-4">
+                    <img src="src/img/footerImg1.png" class="footImg secondLog"/>
+                    <p class="footText">Institute of Animal <br>Biology NAAS of Ukraine</p>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                    <img src="src/img/footerImg2.png" class="footImg thirdLog"/>
+                </div>
+            </div>
+            <div class="row">
+                <img src="src/img/footerImg4.png" class="footImg fourLog"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+ <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular/angular-animate.js"></script>
+    <script src="node_modules/angular/angular-animate.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+
+ <script src="node_modules/jquery/src/jquery.js"></script>
+-->
+   
+
+    <script src="src/libs/angular.min.js"></script>
+    <script src="src/libs/angular-animate.js"></script>
+    <script src="src/libs/angular-animate.min.js"></script>
+    <script src="src/libs/angular-route.min.js"></script>
+    <script src="src/libs/angular-resource.min.js"></script>
+<!--     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>-->
+    
+    <script src="app/appRoute.js"></script>
+    <script src="app/config.js"></script> 
+<!--    <script src="animate.js"></script>-->
+    
+     <script src="app/controllers/navCtrl.controller.js"></script>
+    <script src="app/controllers/home.controller.js"></script>
+    <script src="app/controllers/biography.controller.js"></script> 
+    <script src="app/controllers/bibliography.controller.js"></script>
+     <script src="app/controllers/gallery.controller.js"></script>
+    
+    
+    
+</body>
+</html>

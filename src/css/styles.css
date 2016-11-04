@@ -1,0 +1,368 @@
+body{
+    font-family: serif;
+}
+.header{
+    margin: 15px;
+}
+h1{
+    font-weight: 600;
+    color: #344a71;
+    font-size: 77px;
+}
+/*//nav-bar*/
+.navbar-collapse {
+    margin-top: 20px;
+    border-top: 2px solid #344a71;
+    border-bottom: 2px solid #344a71;
+}
+.navbar-nav{
+    margin-left: 16px;
+}
+.navbar-nav>li>a {
+    font-size: 23px;
+    margin-left: 30px;
+    color: #344a71;
+    text-decoration: underline;
+}
+.navbar-nav>li>a:hover {
+    color: white;
+    background: #344a71;
+    text-decoration: underline;
+}
+.containerNav{
+    margin:auto;
+}
+/*//container*/
+.container{
+    width: 100%;
+    padding-right: 0px;
+     padding-left: 0px;
+     margin-right: 0px;
+     margin-left: 0px;
+}
+#childImg{
+    float: left;
+}
+.headChild{
+    float: left;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #344a71;
+}
+.socNet{
+    width:30px;
+    height:30px;
+    margin: 1%;
+}
+.quoteText{
+    margin-top: 15%;
+}
+.textMain{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    float: right;
+}
+.mainImg{
+    background-image: url("../img/Betz.jpg");
+    background-size: cover;
+    height: 465px;
+    width: 90%;
+    margin: auto;
+}
+.jumbotron{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-image: url(../img/image001.png);
+    background-size: cover;
+    margin-top: 3%;
+}
+#textJumb{
+    color: #344a71;
+    font-size: 30px;
+}
+.imgMiniMenu{
+    width: 325px;
+    height: 260px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 8%;
+}
+.miniMenu{
+    height: 255px;
+}
+.HrCont{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #344a71;
+}
+.btn-default{
+    position: relative;
+    z-index: 2;
+    margin-top: 26%;
+    margin-left: 36%;
+    font-size: 20px;
+    color: #2a368e;
+    background-color: #fff;
+    border-color: #ccc;
+    opacity: 0.7;
+}
+.btn-default:hover {
+    color: white;
+    background-color: #344a71;
+    opacity: 1;
+    border-color: #344a71;
+}
+/*//footer*/
+.footer{
+    margin-top: 8%;
+    background: #0f1623;
+    color: white;
+    height: 330px;
+}
+.footer .column{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 1%;
+}
+.footMarg{
+    margin-top: 10%;
+    font-size: 21px;
+}
+.row {
+     margin-right: 0px;
+     margin-left: 0px;
+}
+.logoImg{
+        margin-left: 40%;
+        margin-top: 13%;
+}
+.col-md-8{
+    padding-left: 0px;
+}
+.footImg{
+    margin-top:20px;
+}
+.firstLog{
+    width: 250px;
+}
+.secondLog{
+    width: 150px;
+}
+.thirdLog{
+    width: 62px;
+    float: right;
+}
+.fourLog{
+    width: 250px;
+}
+.footText{
+    font-size:13px;
+    line-height: 1em;
+}
+#textFirstFoot{
+    font-size: 20px;
+}
+.footer a{
+    color: white;
+    font-size: 20px;
+}
+.footer .footMenu{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footer .col-md-7{
+    padding: 0px;
+}
+.footer .thirdColumn{
+    margin-left: 20px;
+}
+h4{
+    font-size: 21px;
+    font-weight: 600;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+
+/*//fonts*/
+/* font-family: "DroidSerifRegular"; */
+@font-face {
+    font-family: "DroidSerifRegular";
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot");
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DroidSerifRegular/DroidSerifRegular.woff") format("woff"),
+    url("../fonts/DroidSerifRegular/DroidSerifRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "DroidSerifBold"; */
+@font-face {
+    font-family: "DroidSerifBold";
+    src: url("../fonts/DroidSerifBold/DroidSerifBold.eot");
+    src: url("../fonts/DroidSerifBold/DroidSerifBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DroidSerifBold/DroidSerifBold.woff") format("woff"),
+    url("../fonts/DroidSerifBold/DroidSerifBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "DroidSerifItalic"; */
+@font-face {
+    font-family: "DroidSerifItalic";
+    src: url("../fonts/DroidSerifItalic/DroidSerifItalic.eot");
+    src: url("../fonts/DroidSerifItalic/DroidSerifItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DroidSerifItalic/DroidSerifItalic.woff") format("woff"),
+    url("../fonts/DroidSerifItalic/DroidSerifItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "DroidSerifBoldItalic"; */
+@font-face {
+    font-family: "DroidSerifBoldItalic";
+    src: url("../fonts/DroidSerifBoldItalic/DroidSerifBoldItalic.eot");
+    src: url("../fonts/DroidSerifBoldItalic/DroidSerifBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DroidSerifBoldItalic/DroidSerifBoldItalic.woff") format("woff"),
+    url("../fonts/DroidSerifBoldItalic/DroidSerifBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/*//biography page*/
+#mainImgBiogr{
+    margin-left: 4%;
+    width: 92%;
+    margin-bottom: 4%;
+}
+#mainDivBiogr{
+    font-family: "DroidSerifRegular";
+    font-size: 17px;
+    line-height: 30px;
+    color: #344a71;
+}
+.forBg{
+     padding-top: 3%;
+    background-image: url(../img/bgGallery.png);
+    background-size: 110%;
+}
+#mainDivBiogr .row{
+    margin-bottom: 3%;
+}
+#mainDivBiogr img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+#dates1{
+    padding-left: 35%;
+    width: 64%;
+}
+#dates2{
+    padding-left: 35%;
+    width: 60%;
+}
+.biogrImgs{
+    width: 100%;
+}
+.biogrImgs1{
+    width: 92%;
+}
+#imgBiogr{
+    width: 54%;
+}
+.textParagBiogr{
+    padding: 0 42px 0 0;
+}
+
+.sizeStrong{
+    font-size: 20px;
+}
+#paragrQuote{
+    padding: 6% 8% 0 4%;
+}
+#biogrImg2{
+    width: 91%;
+}
+#textQuoteBiogr{
+    color: #a4563d;
+    font-family: "DroidSerifItalic";
+    font-size: 20px;
+}
+#textAutorBiogr{
+    color: #a4563d;
+}
+.secondColumn{
+    padding: 0 8% 0 4%;
+}
+
+/*//bibliography*/
+#mainDivBibl{
+    font-family: "DroidSerifRegular";
+    color: #344a71;
+}
+#mainImgBibl{
+    margin-left: 4%;
+    width: 92%;
+    margin-bottom: 4%;
+}
+#divList{
+    background-image:url(../img/bgBibliography.png);
+    background-size: 100%;
+}
+.biblParagr{
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+.imgDownl{
+    margin: 0 10% 0 0;
+}
+
+/*//gallery*/
+#mainDivGall{
+    font-family: "DroidSerifRegular";
+    color: #344a71;
+}
+.mainTextGal{
+    font-size: 100px;
+    color: white;
+    margin: 27% 0 0 13%;
+}
+.textCenter{
+    font-size: 21px;
+    width: 92%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 47px;
+}
+.imgsGallery{
+     width: 100%;
+}
+.textsGal{
+    font-size: 30px;
+    margin-top: 15%;
+}
+.textImg{
+    float: right;
+    width: 100%;
+}
+.textImg2{
+    float: right;
+}
+.divRow{
+    margin-bottom: 10%;
+}
+#containerGallery{
+    background-image:url(../img/bgGallery.png);
+    background-size: 100%;
+}
+#RowGal4{
+    margin-left: 5%;
+    margin-bottom: 0%;
+}

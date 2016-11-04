@@ -1,0 +1,32 @@
+<div ng-controller='biographyCtrl as biogr' id="mainDivBiogr" class="text-justify">
+    <div class="row" ><img id="mainImgBiogr" src="src/img/biogrMainImg.png"/></div>
+    <div class='row forBg'>
+    <div class='row'>
+    <div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'><img id="dates1" src="src/img/dateBirth.png"/></div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5'>
+            <div class="row"><img id="imgBiogr" src="src/img/textBiography.png"/></div>
+        <div class="rowtext-justify textParagBiogr">{{biogr.rowFirst1}}<strong class='sizeStrong'>{{biogr.rowFirst2}}</strong>{{biogr.rowFirst3}}<strong class='sizeStrong'>{{biogr.rowFirst4}}</strong>{{biogr.rowFirst5}}<strong class='sizeStrong'>{{biogr.rowFirst6}}</strong>{{biogr.rowFirst7}}</div>
+       </div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5' id="paragrQuote">
+        <div class="row"><img class='biogrImgs' src="src/img/biogrImg1.png"/></div>
+        <div class="row" id='textQuoteBiogr'>{{biogr.quote}}</div>
+        <div class="row text-right" id='textAutorBiogr'>{{biogr.autor}}</div>
+        </div>
+    </div>
+    <div class='row'>
+    <div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'></div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5'><img class='biogrImgs1' src="src/img/biogrImg2.png"/></div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5 secondColumn'>{{biogr.rowSecond1}}<strong class='sizeStrong'>{{biogr.rowSecond2}}</strong>{{biogr.rowSecond3}}<strong class='sizeStrong'>{{biogr.rowSecond4}}</strong>{{biogr.rowSecond5}}</div>
+    </div>
+    <div class='row'>
+    <div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'><img id="dates2" src="src/img/dateFrom.png"/></div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5 textParagBiogr'>{{biogr.rowThird}}</div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5 secondColumn'><img class='biogrImgs' src="src/img/biogrImg3.png"/></div>
+    </div>
+    <div class='row'>
+    <div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'></div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5'><img class='biogrImgs1' src="src/img/biogrImg4.png"/></div>
+    <div class='col-md-5 col-lg-5 col-sm-5 col-xs-5 secondColumn'><strong class='sizeStrong'>{{biogr.rowFourth1}}</strong>{{biogr.rowFourth2}}<strong class='sizeStrong'>{{biogr.rowFourth3}}</strong>{{biogr.rowFourth4}}<strong class='sizeStrong'>{{biogr.rowFourth5}}</strong>{{biogr.rowFourth6}}<strong class='sizeStrong'>{{biogr.rowFourth7}}</strong>{{biogr.rowFourth8}}</div>
+    </div>
+        </div>
+</div>

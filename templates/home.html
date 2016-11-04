@@ -1,0 +1,31 @@
+<div ng-controller='homeCtrl as home'>
+<div class="mainImg" >
+        <div class="col-md-7 col-md-offset-4 col-lg-7 col-lg-offset-4 col-sm-7 col-sm-offset-4 col-xs-7 col-xs-offset-4 quoteText">
+        <strong><p class='textMain text-justify'>{{home.quote}}</p>
+        <p class='textMain'>{{home.autor}}</p></strong>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <p id="textJumb" class="text-justify">{{home.mainText}}</p>
+    </div>
+
+    <div class="miniMenu">
+         <hr class="HrCont">
+        <div class="row miniMenu">
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                <img src="src/img/biography.jpg" class="imgMiniMenu img-responsive">
+                <button type="button" class="btn btn-default">{{home.textBiogr}}</button>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                <img src="src/img/betzCells.jpg" class="imgMiniMenu img-responsive">
+                <button type="button" class="btn btn-default">{{home.textCells}}</button>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                <img src="src/img/bibliography.jpg" class="imgMiniMenu img-responsive">
+                <button type="button" class="btn btn-default">{{home.textBibl}}</button>
+            </div>
+        </div>
+        <hr class="HrCont">
+    </div>
+</div>
