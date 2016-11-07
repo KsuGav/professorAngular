@@ -1,5 +1,5 @@
 body{
-    font-family: serif;
+    font-family: "DroidSerifRegular";
 }
 .header{
     margin: 15px;
@@ -7,7 +7,7 @@ body{
 h1{
     font-weight: 600;
     color: #344a71;
-    font-size: 77px;
+    font-size: 55px;
 }
 /*//nav-bar*/
 .navbar-collapse {
@@ -15,19 +15,19 @@ h1{
     border-top: 2px solid #344a71;
     border-bottom: 2px solid #344a71;
 }
-.navbar-nav{
-    margin-left: 16px;
-}
-.navbar-nav>li>a {
-    font-size: 23px;
-    margin-left: 30px;
+/*.navbar-nav{*/
+    /*margin-left: 16px;*/
+/*}*/
+.nav-justified>li>a {
+    font-size: 20px;
+    /*margin-left: 30px;*/
     color: #344a71;
-    text-decoration: underline;
+    word-wrap: normal;
+    white-space: nowrap;
 }
-.navbar-nav>li>a:hover {
+.nav-justified>li>a:hover {
     color: white;
     background: #344a71;
-    text-decoration: underline;
 }
 .containerNav{
     margin:auto;
@@ -60,7 +60,7 @@ h1{
 }
 .textMain{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
     float: right;
 }
@@ -105,7 +105,7 @@ h1{
     z-index: 2;
     margin-top: 26%;
     margin-left: 36%;
-    font-size: 20px;
+    font-size: 16px;
     color: #2a368e;
     background-color: #fff;
     border-color: #ccc;
@@ -122,7 +122,7 @@ h1{
     margin-top: 8%;
     background: #0f1623;
     color: white;
-    height: 330px;
+    height: 300px;
 }
 .footer .column{
     padding-left: 3%;
@@ -131,7 +131,7 @@ h1{
 }
 .footMarg{
     margin-top: 10%;
-    font-size: 21px;
+    font-size: 16px;
 }
 .row {
      margin-right: 0px;
@@ -161,15 +161,15 @@ h1{
     width: 250px;
 }
 .footText{
-    font-size:13px;
+    font-size:14px;
     line-height: 1em;
 }
 #textFirstFoot{
-    font-size: 20px;
+    font-size: 14px;
 }
 .footer a{
     color: white;
-    font-size: 20px;
+    font-size: 14px;
 }
 .footer .footMenu{
     padding-left: 0px;
@@ -182,7 +182,7 @@ h1{
     margin-left: 20px;
 }
 h4{
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 600;
 }
 hr {
@@ -244,7 +244,7 @@ hr {
 }
 #mainDivBiogr{
     font-family: "DroidSerifRegular";
-    font-size: 17px;
+    font-size: 14px;
     line-height: 30px;
     color: #344a71;
 }
@@ -283,7 +283,7 @@ hr {
 }
 
 .sizeStrong{
-    font-size: 20px;
+    font-size: 16px;
 }
 #paragrQuote{
     padding: 6% 8% 0 4%;
@@ -319,7 +319,7 @@ hr {
 }
 .biblParagr{
     margin-bottom: 3%;
-    font-size: 20px;
+    font-size: 14px;
 }
 .imgDownl{
     margin: 0 10% 0 0;
@@ -336,7 +336,7 @@ hr {
     margin: 27% 0 0 13%;
 }
 .textCenter{
-    font-size: 21px;
+    font-size: 14px;
     width: 92%;
     margin: auto;
     padding-top: 5%;
